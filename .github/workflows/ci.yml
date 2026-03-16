@@ -33,7 +33,7 @@ jobs:
         run: ./scripts/deploy.sh
 
       - name: Guardar artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: deploy-files
           path: deploy/
