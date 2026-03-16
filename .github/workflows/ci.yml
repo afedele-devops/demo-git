@@ -28,8 +28,10 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v3
+      
       - name: Desplegar aplicación
-      - run: ./scripts/deploy.sh
+        run: ./scripts/deploy.sh
+
       - name: Guardar artifact
         uses: actions/upload-artifact@v3
         with:
