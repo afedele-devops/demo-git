@@ -22,5 +22,8 @@ deploy_job:
   stage: deploy
   script:
     - ./scripts/deploy.sh
+  artifacts:
+    paths
+      - deploy/
   only:
     - main
