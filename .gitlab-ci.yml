@@ -1,0 +1,26 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build_job:
+  stage: build
+  script:
+    - echo "Compilando proyecto..."
+    - python3 -m py_compile src/app.py
+  artifacts:
+    paths:
+      - src/__pycache__/
+
+test_job:
+  stage: test
+  script:
+    - echo "Ejecutando tests..."
+    - python3 src/app.py | grep "Hello CI/CD World!"
+
+deploy_job:
+  stage: deploy
+  script:
+    - ./scripts/deploy.sh
+  only:
+    - main
