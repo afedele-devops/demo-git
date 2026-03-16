@@ -5,3 +5,4 @@ Colaboracion: cambio desde B
 Colaboracion: cambio desde A
 Prueba de sincronización GitHub + GitLab
 Prueba CI/CD
+Prueba CI/CD 2
