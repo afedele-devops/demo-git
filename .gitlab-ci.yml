@@ -23,7 +23,7 @@ deploy_job:
   script:
     - ./scripts/deploy.sh
   artifacts:
-    paths
+    paths:
       - deploy/
   only:
     - main
