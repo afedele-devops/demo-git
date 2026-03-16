@@ -32,6 +32,6 @@ jobs:
       - run: ./scripts/deploy.sh
       - name: Guardar artifact
         uses: actions/upload-artifact@v3
-        whit:
+        with:
           name: deploy-files
           path: deploy/
