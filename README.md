@@ -4,3 +4,4 @@ Sección de colaboración agregada desde issue #1
 Colaboracion: cambio desde B
 Colaboracion: cambio desde A
 Prueba de sincronización GitHub + GitLab
+Prueba CI/CD
